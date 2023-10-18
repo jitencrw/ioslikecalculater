@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <title>Calculater by jiten</title>
+</head>
+
+
+<body>
+  <div id="border">
+    <input type="text" id="input-box" readonly> <br>
+
+
+
+    <button class="buttons" onclick="
+    displayValue = '';
+    document.querySelector('#input-box').value = displayValue; ">AC</button>
+
+
+    <button class="buttons" onclick="
+   alert('This button is currently not in use');
+    document.querySelector('#input-box').value = displayValue;">%</button>
+
+
+    <button class="buttons" onclick="
+    displayValue += '/'">÷</button>
+
+
+    <button class="orange-button" onclick="
+   displayValue = displayValue.slice(0, -1);
+    document.querySelector('#input-box').value = displayValue; "
+    >⌫</button> <br>
+
+
+    <button class="buttons" onclick="
+    displayValue+=7;
+    document.querySelector('#input-box').value = displayValue; ">7</button>
+
+
+    <button class="buttons" onclick="
+    displayValue+=8;
+    document.querySelector('#input-box').value = displayValue; ">8</button>
+
+
+    <button class="buttons" onclick="
+    displayValue+=9;
+    document.querySelector('#input-box').value = displayValue; ">9</button>
+
+
+    <button class="orange-button" onclick="
+    displayValue+= '*';
+    document.querySelector('#input-box').value = displayValue; ">x</button> <br>
+
+
+    <button class="buttons" onclick="
+    displayValue+=4;
+    document.querySelector('#input-box').value = displayValue; ">4</button>
+
+
+    <button class="buttons" onclick="
+    displayValue+=5;
+    document.querySelector('#input-box').value = displayValue; ">5</button>
+
+
+    <button class="buttons" onclick="
+    displayValue+=6;
+    document.querySelector('#input-box').value = displayValue; ">6</button>
+
+
+    <button class="orange-button" onclick="
+    displayValue+= '-';
+    document.querySelector('#input-box').value = displayValue; ">-</button> <br>
+
+
+    <button class="buttons" onclick="
+    displayValue+=1;
+    document.querySelector('#input-box').value = displayValue; ">1</button>
+
+
+    <button class="buttons" onclick="
+    displayValue+=2;
+    document.querySelector('#input-box').value = displayValue; ">2</button>
+
+
+    <button class="buttons" onclick="
+    displayValue+=3;
+    document.querySelector('#input-box').value = displayValue; ">3</button>
+
+
+    <button class="orange-button" onclick="
+    displayValue+= '+';
+    document.querySelector('#input-box').value = displayValue; ">+</button> <br>
+
+
+    <button class="buttons" onclick="
+    displayValue+= '.';
+    document.querySelector('#input-box').value = displayValue; ">.</button>
+
+
+    <button class="buttons" onclick="
+    displayValue+=0;
+    document.querySelector('#input-box').value = displayValue; ">0</button>
+
+
+    <button class="buttons" onclick="
+    displayValue+= '.';
+    document.querySelector('#input-box').value = displayValue; ">.</button>
+
+
+    <button class="orange-button"
+    onclick="
+    let result =eval(displayValue);
+    displayValue = result;
+    document.querySelector('#input-box').value = displayValue;
+    displayValue=''; ">=</button>
+    
+
+
+
+
+
+  </div>
+
+  <script>
+    let displayValue = '';
+    document.querySelector('#input-box').value = displayValue;
+  </script>
+</body>
+</html>
